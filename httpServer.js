@@ -5,11 +5,6 @@ const app = express();
 app.listen(8080, function () {
     console.log('server ready...');
 });
-
-app.get('/book', function(req, res){
-    res.send('도서 관련 페이지입니다');
-});
-
 app.get('/', function(req, res){
     res.sendFile(__dirname+"/index.html");
 });
